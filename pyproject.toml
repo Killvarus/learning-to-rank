@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 150
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+# E702: несколько команд matplotlib в строке — осознанно, для компактности графиков
+ignore = ["E702"]
